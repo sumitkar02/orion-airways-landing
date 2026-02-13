@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orion Airways - Book flights and explore new destinations">
+    <title>Orion Airways</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">Orion Airways</div>
+            <nav class="nav-links">
+                <a href="#flights">Flights</a>
+                <a href="#hotels">Hotels</a>
+                <a href="#offers">Offers</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn-secondary">Sign In</button>
+                <button class="btn-primary">Book Now</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Discover the World with Orion Airways</h1>
+                <p>Connecting you to over 500 destinations worldwide</p>
+            </div>
+
+            <div class="search-container">
+                <div class="trip-type">
+                    <label><input type="radio" name="trip" checked> Round Trip</label>
+                    <label><input type="radio" name="trip"> One Way</label>
+                </div>
+
+                <form class="flight-search">
+                    <div class="search-row">
+                        <div class="input-group">
+                            <label>From</label>
+                            <input type="text" placeholder="Departure city" required>
+                        </div>
+                        <div class="input-group">
+                            <label>To</label>
+                            <input type="text" placeholder="Arrival city" required>
+                        </div>
+                    </div>
+
+                    <div class="search-row">
+                        <div class="input-group">
+                            <label>Depart</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Return</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Passengers</label>
+                            <input type="number" placeholder="1" min="1" max="9" value="1" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Class</label>
+                            <select required>
+                                <option>Economy</option>
+                                <option>Premium</option>
+                                <option>Business</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Search Flights</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- OFFERS SECTION -->
+        <section class="offers-section" id="offers">
+            <div class="section-header">
+                <h2>Why Choose Orion Airways?</h2>
+                <p>Premium service at competitive prices</p>
+            </div>
+
+            <div class="card-grid">
+                <div class="feature-card">
+                    <div class="card-icon">✈️</div>
+                    <h3>500+ Destinations</h3>
+                    <p>Fly to your favorite destinations worldwide</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-icon">💰</div>
+                    <h3>Best Price Guarantee</h3>
+                    <p>We match any lower price you find elsewhere</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-icon">🎁</div>
+                    <h3>Exclusive Offers</h3>
+                    <p>Special discounts for frequent flyers</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Secure Booking</h3>
+                    <p>Safe and secure payment options</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Orion Airways. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
