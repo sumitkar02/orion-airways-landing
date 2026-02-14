@@ -11,12 +11,12 @@
 
     <header class="navbar">
         <div class="nav-container">
-            <div class="logo">Orion Airways</div>
+            <div class="logo"><img src="orion airways.png" alt="Orion Airways Logo"></div>
             <nav class="nav-links">
-                <a href="#flights">Flights</a>
-                <a href="#hotels">Hotels</a>
-                <a href="#offers">Offers</a>
-                <a href="#contact">Contact</a>
+                <a href="#flights" data-tooltip="Explore 500+ destinations and find the best flight deals">Flights</a>
+                <a href="#hotels" data-tooltip="Book accommodations in premium hotels worldwide">Hotels</a>
+                <a href="#offers" data-tooltip="Discover exclusive discounts and special promotions">Offers</a>
+                <a href="#contact" data-tooltip="Reach out to our customer support team">Contact</a>
             </nav>
             <div class="auth-buttons">
                 <button class="btn-secondary">Sign In</button>
@@ -43,11 +43,45 @@
                     <div class="search-row">
                         <div class="input-group">
                             <label>From</label>
-                            <input type="text" placeholder="Departure city" required>
+                            <input type="text" placeholder="Departure city" list="departure-cities" required>
+                            <datalist id="departure-cities">
+                                <option value="NYC - New York">
+                                <option value="LAX - Los Angeles">
+                                <option value="ORD - Chicago">
+                                <option value="DFW - Dallas/Fort Worth">
+                                <option value="JFK - New York JFK">
+                                <option value="ATL - Atlanta">
+                                <option value="LHR - London">
+                                <option value="CDG - Paris">
+                                <option value="HND - Tokyo">
+                                <option value="DXB - Dubai">
+                                <option value="SIN - Singapore">
+                                <option value="LAS - Las Vegas">
+                                <option value="SFO - San Francisco">
+                                <option value="SEA - Seattle">
+                                <option value="MIA - Miami">
+                            </datalist>
                         </div>
                         <div class="input-group">
                             <label>To</label>
-                            <input type="text" placeholder="Arrival city" required>
+                            <input type="text" placeholder="Arrival city" list="arrival-cities" required>
+                            <datalist id="arrival-cities">
+                                <option value="NYC - New York">
+                                <option value="LAX - Los Angeles">
+                                <option value="ORD - Chicago">
+                                <option value="DFW - Dallas/Fort Worth">
+                                <option value="JFK - New York JFK">
+                                <option value="ATL - Atlanta">
+                                <option value="LHR - London">
+                                <option value="CDG - Paris">
+                                <option value="HND - Tokyo">
+                                <option value="DXB - Dubai">
+                                <option value="SIN - Singapore">
+                                <option value="LAS - Las Vegas">
+                                <option value="SFO - San Francisco">
+                                <option value="SEA - Seattle">
+                                <option value="MIA - Miami">
+                            </datalist>
                         </div>
                     </div>
 
@@ -146,5 +180,4 @@
     </footer>
 
 </body>
-
 </html>
