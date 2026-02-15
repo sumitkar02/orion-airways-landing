@@ -1,20 +1,95 @@
-.body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url('path/to/your/background.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
-
-html {
-  height: 100%;
+.html {
+    height: 100%;
 }
 
 body {
-  height: 100%;
-  font-family: Arial, sans-serif;
-  color: white;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Button Styling */
+.button {
+    padding: 10px 20px;
+    background-color: #f59e42;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #d68a35;
+}
+
+/* Hero Section Styling */
+.hero {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Search Container Styling */
+.search-container {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Offers Section Styling */
+.offers {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .offers {
+        flex-direction: column;
+    }
+}
+
+/* Notification Animations */
+.notification {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+.notification-hide {
+    opacity: 0;
 }
