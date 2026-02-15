@@ -5,10 +5,11 @@
 }
 
 body {
-    background-image: url('orion-airways-bg.jpg');
+    background-image: url('wp6604752-tokyo-japan-wallpapers.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 /* NAVBAR */
@@ -434,12 +435,3 @@ main {
         opacity: 0;
     }
 }
-
-
-
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-
