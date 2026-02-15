@@ -435,3 +435,25 @@ main {
         opacity: 0;
     }
 }
+
+/* Width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(20, 20, 40, 0.6);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6a5acd, #4b3ca7);
+  border-radius: 10px;
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #7b6cff, #5a4bd1);
+}
+
